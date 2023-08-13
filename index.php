@@ -1,3 +1,4 @@
+<?php
       $oldTable   =  collect(json_decode(file_get_contents(__DIR__.'/exportOldTable.json'),true));
       $targetTable =  collect(json_decode(file_get_contents(__DIR__.'/exportTargetTable.json'),true));
       $targetTable = $targetTable->pluck('value','key');
